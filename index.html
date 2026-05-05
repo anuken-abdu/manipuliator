@@ -5,13 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Манипулятор Алматы — аренда крана-манипулятора по городу и области | manipuliator.kz</title>
 
-  <!-- SEO META -->
   <meta name="description" content="Аренда манипулятора в Алматы и области круглосуточно. Кран-манипуляторы 5, 10, 15 и 20 тонн. Перевозка контейнеров, бытовок, ЖБИ, стройматериалов. Звоните: +7 701 343 2227." />
   <meta name="keywords" content="манипулятор алматы, аренда манипулятора алматы, кран манипулятор, манипулятор недорого, манипулятор 5 тонн, манипулятор 10 тонн, манипулятор 15 тонн, манипулятор 20 тонн, услуги манипулятора, манипулятор алматинская область, перевозка контейнеров, перевозка бытовок, доставка стройматериалов, грузоперевозки манипулятор" />
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://manipuliator.kz/" />
 
-  <!-- Open Graph -->
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://manipuliator.kz/" />
   <meta property="og:title" content="Манипулятор Алматы — аренда крана-манипулятора 5/10/15/20 т" />
@@ -19,13 +17,11 @@
   <meta property="og:image" content="https://manipuliator.kz/images/og.jpg" />
   <meta property="og:locale" content="ru_RU" />
 
-  <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Манипулятор Алматы — аренда крана-манипулятора" />
   <meta name="twitter:description" content="Услуги манипулятора в Алматы и области. Звоните: +7 701 343 2227." />
   <meta name="twitter:image" content="https://manipuliator.kz/images/og.jpg" />
 
-  <!-- Schema.org LocalBusiness for SEO/контекстная реклама -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -34,7 +30,6 @@
     "image": "https://manipuliator.kz/images/og.jpg",
     "url": "https://manipuliator.kz/",
     "telephone": "+77013432227",
-    "priceRange": "₸₸",
     "areaServed": [
       { "@type": "City", "name": "Алматы" },
       { "@type": "AdministrativeArea", "name": "Алматинская область" }
@@ -54,18 +49,14 @@
   }
   </script>
 
-  <!-- Fonts: Bebas Neue (display, индустриальный) + Manrope (body) с поддержкой кириллицы -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@300;400;500;600;700;800&display=swap">
 
-  <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-  <!-- Tailwind -->
   <script src="https://cdn.tailwindcss.com"></script>
 
-  <!-- AOS -->
   <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
 
   <script>
@@ -82,7 +73,7 @@
   </script>
 
   <style>
-    /* ====== ТЕМА (CSS-переменные) ====== */
+    /* ====== ТЕМА ====== */
     :root[data-theme="dark"] {
       --bg-1: #0A0A0A;
       --bg-2: #141414;
@@ -131,7 +122,6 @@
     }
     section, footer, header { scroll-margin-top: 88px; }
 
-    /* Шум */
     .noise-bg {
       position: fixed; inset: 0;
       background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='nf'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.7' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23nf)' opacity='1'/%3E%3C/svg%3E");
@@ -141,7 +131,6 @@
       mix-blend-mode: overlay;
     }
 
-    /* Сетка-фон */
     .grid-bg {
       background-image:
         linear-gradient(var(--grid-line) 1px, transparent 1px),
@@ -155,18 +144,16 @@
     .caption { font-family: "Manrope", sans-serif; font-weight: 600; font-size: 11px; text-transform: uppercase; letter-spacing: 0.22em; color: var(--text-3); }
     .body-text { font-size: 16px; line-height: 1.7; color: var(--text-2); }
 
-    /* Скошенные кнопки */
+    /* Адаптивные размеры заголовков — clamp() решает проблему обрезания на мобильных */
+    .h1-hero { font-size: clamp(42px, 12vw, 124px); line-height: 0.92; }
+    .h2-display { font-size: clamp(32px, 8vw, 72px); line-height: 0.95; }
+
     .clip-btn {
       clip-path: polygon(8% 0, 100% 0, 100% 100%, 0% 100%);
       transition: clip-path .3s ease, transform .2s ease, background-color .25s;
     }
     .clip-btn:hover { clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%); transform: translateY(-1px); }
 
-    /* Кнопка-skew (как на референсе) */
-    .skew-btn { transform: skewX(-12deg); }
-    .skew-btn > * { display: block; transform: skewX(12deg); }
-
-    /* Glitch hover на крупных заголовках */
     .glitch:hover { animation: glitch 0.32s cubic-bezier(.25,.46,.45,.94) infinite; color: var(--accent); }
     @keyframes glitch {
       0%   { transform: translate(0) }
@@ -177,15 +164,6 @@
       100% { transform: translate(0) }
     }
 
-    /* Ленты для разделителей */
-    .ticker {
-      display: flex; gap: 2.5rem; align-items: center;
-      animation: tick 28s linear infinite;
-      white-space: nowrap;
-    }
-    @keyframes tick { from { transform: translateX(0) } to { transform: translateX(-50%) } }
-
-    /* Карточки */
     .card {
       background: var(--card);
       border: 1px solid var(--border);
@@ -194,7 +172,6 @@
     .card:hover { background: var(--card-hover); border-color: var(--border-strong); }
     .card-accent { border-left: 3px solid var(--accent); }
 
-    /* Стрелка подчёркивания у заголовков */
     .title-bar {
       display: inline-flex; align-items: center; gap: 14px;
       color: var(--accent);
@@ -205,11 +182,9 @@
       display: inline-block;
     }
 
-    /* Ссылки */
     a { color: inherit; }
     .accent { color: var(--accent); }
 
-    /* Hero */
     .hero {
       position: relative;
       min-height: 92svh;
@@ -232,7 +207,6 @@
       pointer-events: none;
     }
 
-    /* Drawer (бургер справа) */
     .drawer-overlay {
       position: fixed; inset: 0; background: rgba(0,0,0,0.55);
       opacity: 0; pointer-events: none;
@@ -267,7 +241,6 @@
     .drawer-link:hover { background: var(--accent-soft); color: var(--accent); padding-left: 32px; }
     .drawer-link i { color: var(--accent); }
 
-    /* Theme toggle */
     .icon-btn {
       width: 42px; height: 42px;
       display: grid; place-items: center;
@@ -280,10 +253,7 @@
     }
     .icon-btn:hover { border-color: var(--accent); color: var(--accent); background: var(--accent-soft); }
 
-    /* Pulse на кнопке звонка */
-    .pulse {
-      position: relative;
-    }
+    .pulse { position: relative; }
     .pulse::after {
       content: ""; position: absolute; inset: -2px;
       border-radius: 999px;
@@ -296,7 +266,6 @@
       100% { opacity: 0; transform: scale(1.4); }
     }
 
-    /* Equipment image placeholders (если фото нет, видна заметка) */
     .img-fallback {
       background:
         repeating-linear-gradient(45deg, var(--bg-3), var(--bg-3) 12px, var(--bg-2) 12px, var(--bg-2) 24px);
@@ -306,24 +275,53 @@
       font-size: 14px;
     }
 
-    /* Список преимуществ */
+    /* ====== FEATURE-карточки (компактные, аккуратные переносы) ====== */
     .feature {
-      display: flex; gap: 14px; align-items: flex-start;
-      padding: 18px;
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+      padding: 14px;
       background: var(--card);
       border: 1px solid var(--border);
       transition: border-color .2s, background-color .2s;
     }
     .feature:hover { border-color: var(--accent); background: var(--card-hover); }
     .feature .ico {
-      width: 44px; height: 44px; flex: 0 0 44px;
+      width: 38px; height: 38px;
+      flex: 0 0 38px;
       display: grid; place-items: center;
       background: var(--accent-soft);
       color: var(--accent);
-      font-size: 20px;
+      font-size: 16px;
+    }
+    .feature .ft-body { min-width: 0; flex: 1 1 auto; }
+    .feature .ft-title {
+      font-family: "Manrope", sans-serif;
+      font-weight: 700;
+      color: var(--text-1);
+      line-height: 1.25;
+      font-size: 15px;
+    }
+    .feature .ft-sub {
+      color: var(--text-3);
+      font-size: 13px;
+      line-height: 1.45;
+      margin-top: 2px;
+    }
+    .feature .ft-desc {
+      color: var(--text-2);
+      font-size: 14.5px;
+      line-height: 1.6;
+      margin-top: 6px;
     }
 
-    /* FAQ */
+    @media (max-width: 480px) {
+      .feature { padding: 12px; gap: 10px; }
+      .feature .ico { width: 34px; height: 34px; flex: 0 0 34px; font-size: 14px; }
+      .feature .ft-title { font-size: 14px; }
+      .feature .ft-sub { font-size: 12px; }
+    }
+
     details.faq {
       background: var(--card);
       border: 1px solid var(--border);
@@ -349,41 +347,18 @@
     details.faq[open] summary::after { transform: rotate(45deg); }
     details.faq p { margin-top: 12px; color: var(--text-2); line-height: 1.7; }
 
-    /* Прайс */
-    .price-row {
-      display: grid;
-      grid-template-columns: 1fr auto;
-      gap: 16px;
-      padding: 18px 0;
-      border-bottom: 1px dashed var(--border-strong);
-    }
-    .price-row:last-child { border-bottom: 0; }
-    .price-row .price {
-      font-family: "Bebas Neue", sans-serif;
-      font-size: 28px; line-height: 1;
-      color: var(--text-1);
-      letter-spacing: .02em;
-    }
-    .price-row .price small { font-size: 14px; color: var(--text-3); font-family: "Manrope", sans-serif; font-weight: 600; }
-
-    /* Decorative number */
     .deco-num {
       font-family: "Bebas Neue", sans-serif;
       font-size: 96px; line-height: 1;
       color: transparent;
       -webkit-text-stroke: 1px var(--border-strong);
-      text-stroke: 1px var(--border-strong);
       pointer-events: none;
       user-select: none;
     }
-
-    /* Адаптация */
     @media (max-width: 480px) {
-      .hero h1 { font-size: 56px !important; }
-      .deco-num { font-size: 64px; }
+      .deco-num { font-size: 56px; }
     }
 
-    /* Back to top */
     .to-top {
       position: fixed; right: 20px; bottom: 20px;
       width: 48px; height: 48px;
@@ -397,7 +372,6 @@
     }
     .to-top.show { display: grid; }
 
-    /* Простая SEO-штука: hidden список ключей в подвале */
     .seo-keywords { color: var(--text-3); font-size: 12px; line-height: 1.6; }
   </style>
 </head>
@@ -415,29 +389,24 @@
       </a>
 
       <div class="flex items-center gap-2 sm:gap-3">
-        <!-- Phone CTA, видна на md+ -->
         <a href="tel:+77013432227" class="hidden md:inline-flex items-center gap-2 nav-link px-4 py-2 border" style="border-color: var(--border-strong); color: var(--text-1);">
           <i class="fas fa-phone accent"></i>
           <span>+7 701 343 2227</span>
         </a>
 
-        <!-- Theme toggle -->
         <button id="themeToggle" class="icon-btn" aria-label="Сменить тему">
           <i class="fas fa-moon" id="themeIconDark"></i>
           <i class="fas fa-sun hidden" id="themeIconLight"></i>
         </button>
 
-        <!-- WhatsApp small icon (always visible) -->
         <a href="https://wa.me/77013432227?text=Здравствуйте%21%20Пишу%20с%20сайта%20manipuliator.kz%2C%20интересует%20манипулятор." target="_blank" rel="noopener noreferrer" class="icon-btn" aria-label="WhatsApp">
           <i class="fab fa-whatsapp"></i>
         </a>
 
-        <!-- Phone icon mobile -->
         <a href="tel:+77013432227" class="md:hidden icon-btn pulse" aria-label="Позвонить">
           <i class="fas fa-phone"></i>
         </a>
 
-        <!-- Burger -->
         <button id="burgerBtn" class="icon-btn" aria-label="Открыть меню" aria-expanded="false" aria-controls="drawer">
           <i class="fas fa-bars"></i>
         </button>
@@ -445,7 +414,7 @@
     </div>
   </nav>
 
-  <!-- ============== DRAWER (правый бургер) ============== -->
+  <!-- ============== DRAWER ============== -->
   <div class="drawer-overlay" id="drawerOverlay" aria-hidden="true"></div>
   <aside class="drawer" id="drawer" aria-hidden="true" aria-label="Боковое меню">
     <div class="flex items-center justify-between px-6 py-5 border-b" style="border-color: var(--border);">
@@ -461,7 +430,6 @@
       <a href="#equipment" class="drawer-link">Виды техники <i class="fas fa-chevron-right text-xs"></i></a>
       <a href="#works" class="drawer-link">Что перевозим <i class="fas fa-chevron-right text-xs"></i></a>
       <a href="#advantages" class="drawer-link">Преимущества <i class="fas fa-chevron-right text-xs"></i></a>
-      <a href="#prices" class="drawer-link">Цены / Прайс <i class="fas fa-chevron-right text-xs"></i></a>
       <a href="#areas" class="drawer-link">Зоны обслуживания <i class="fas fa-chevron-right text-xs"></i></a>
       <a href="#how" class="drawer-link">Как заказать <i class="fas fa-chevron-right text-xs"></i></a>
       <a href="#faq" class="drawer-link">Вопросы и ответы <i class="fas fa-chevron-right text-xs"></i></a>
@@ -469,7 +437,7 @@
     </nav>
 
     <div class="p-6 border-t" style="border-color: var(--border);">
-      <a href="tel:+77013432227" class="block w-full text-center bg-[var(--accent)] text-white display text-3xl py-4 clip-btn" style="background: var(--accent);">
+      <a href="tel:+77013432227" class="block w-full text-center display text-3xl py-4 clip-btn" style="background: var(--accent); color: #fff;">
         +7 701 343 2227
       </a>
       <a href="https://wa.me/77013432227?text=Здравствуйте%21%20Пишу%20с%20сайта%20manipuliator.kz%2C%20интересует%20манипулятор." target="_blank" rel="noopener noreferrer" class="mt-3 flex items-center justify-center gap-2 nav-link py-3 border" style="border-color: var(--border-strong);">
@@ -483,29 +451,28 @@
   <header id="top" class="hero flex items-center pt-24 pb-12 sm:pt-28 sm:pb-16">
     <div class="container mx-auto px-4 sm:px-6 relative z-10">
       <div class="max-w-3xl">
-        <div class="caption" data-aos="fade-right" style="color: var(--accent);">
+        <div data-aos="fade-right">
           <span class="title-bar">EST. ALMATY &middot; РАБОТАЕМ 24/7</span>
         </div>
 
-        <h1 class="display mt-5 text-[68px] sm:text-[96px] md:text-[124px] glitch cursor-default" data-aos="fade-right" data-aos-delay="80" style="color: var(--text-1);">
-          МАНИПУЛЯТОР<br>
-          <span class="accent">АЛМАТЫ</span>
+        <h1 class="display h1-hero mt-5 glitch cursor-default" data-aos="fade-right" data-aos-delay="80" style="color: var(--text-1);">
+          <span class="block">МАНИПУЛЯТОР</span>
+          <span class="block accent">АЛМАТЫ</span>
         </h1>
 
         <p class="body-text mt-6 max-w-xl" data-aos="fade-right" data-aos-delay="160">
-          Аренда крана-манипулятора в Алматы и Алматинской области. Грузоподъёмность от <b style="color: var(--text-1)">5 до 20 тонн</b>. Подача в течение часа. Без выходных.
+          Аренда крана-манипулятора в Алматы и Алматинской области. Грузоподъёмность <b style="color: var(--text-1)">от 5 до 20 тонн</b>. Подача в течение часа. Без выходных.
         </p>
 
         <div class="mt-8 flex flex-col sm:flex-row gap-3" data-aos="fade-right" data-aos-delay="240">
-          <a href="tel:+77013432227" class="inline-flex items-center justify-center gap-3 px-8 py-5 display text-2xl text-black clip-btn" style="background: var(--accent); color: #fff;">
+          <a href="tel:+77013432227" class="inline-flex items-center justify-center gap-3 px-8 py-5 display text-2xl clip-btn" style="background: var(--accent); color: #fff;">
             <i class="fas fa-phone"></i> Заказать сейчас
           </a>
-          <a href="#prices" class="inline-flex items-center justify-center gap-3 px-8 py-5 display text-2xl border" style="border-color: var(--border-strong); color: var(--text-1);">
-            Прайс
+          <a href="#equipment" class="inline-flex items-center justify-center gap-3 px-8 py-5 display text-2xl border" style="border-color: var(--border-strong); color: var(--text-1);">
+            Наша техника
           </a>
         </div>
 
-        <!-- Quick stats -->
         <div class="mt-12 grid grid-cols-3 gap-3 sm:gap-6 max-w-xl" data-aos="fade-up" data-aos-delay="320">
           <div class="card p-4 sm:p-5">
             <div class="display text-4xl sm:text-5xl accent">24/7</div>
@@ -524,37 +491,17 @@
     </div>
   </header>
 
-  <!-- Бегущая лента -->
-  <div class="py-5 border-y overflow-hidden" style="border-color: var(--border); background: var(--bg-2);">
-    <div class="ticker display text-3xl" style="color: var(--text-2);">
-      <span>МАНИПУЛЯТОР АЛМАТЫ</span><span class="accent">●</span>
-      <span>КРАН-МАНИПУЛЯТОР 5-20 ТОНН</span><span class="accent">●</span>
-      <span>ДОСТАВКА КРУГЛОСУТОЧНО</span><span class="accent">●</span>
-      <span>ПЕРЕВОЗКА КОНТЕЙНЕРОВ</span><span class="accent">●</span>
-      <span>МОНТАЖНЫЕ РАБОТЫ</span><span class="accent">●</span>
-      <span>АЛМАТИНСКАЯ ОБЛАСТЬ</span><span class="accent">●</span>
-      <!-- duplicate for seamless loop -->
-      <span>МАНИПУЛЯТОР АЛМАТЫ</span><span class="accent">●</span>
-      <span>КРАН-МАНИПУЛЯТОР 5-20 ТОНН</span><span class="accent">●</span>
-      <span>ДОСТАВКА КРУГЛОСУТОЧНО</span><span class="accent">●</span>
-      <span>ПЕРЕВОЗКА КОНТЕЙНЕРОВ</span><span class="accent">●</span>
-      <span>МОНТАЖНЫЕ РАБОТЫ</span><span class="accent">●</span>
-      <span>АЛМАТИНСКАЯ ОБЛАСТЬ</span><span class="accent">●</span>
-    </div>
-  </div>
-
-  <!-- ============== УСЛУГИ / О КОМПАНИИ ============== -->
+  <!-- ============== УСЛУГИ ============== -->
   <section id="services" class="py-20 sm:py-24 grid-bg" style="background: var(--bg-1);">
     <div class="container mx-auto px-4 sm:px-6">
 
       <div class="mb-12" data-aos="fade-right">
         <span class="title-bar">01 — О компании</span>
-        <h2 class="display mt-4 text-5xl sm:text-7xl" style="color: var(--text-1);">
+        <h2 class="display h2-display mt-4" style="color: var(--text-1);">
           Услуги манипулятора <br><span class="accent">по Алматы и области</span>
         </h2>
       </div>
 
-      <!-- 2 колонки -->
       <div class="grid lg:grid-cols-2 gap-6 lg:gap-10">
         <div class="card p-6 sm:p-8 card-accent" data-aos="fade-up">
           <div class="caption">Кто мы</div>
@@ -573,43 +520,77 @@
         <div class="card p-6 sm:p-8" data-aos="fade-up" data-aos-delay="120">
           <div class="caption">Что делаем</div>
           <h3 class="display text-3xl sm:text-4xl mt-2" style="color: var(--text-1);">Полный спектр работ</h3>
-          <div class="grid grid-cols-2 gap-3 mt-6">
-            <div class="feature"><div class="ico"><i class="fas fa-truck-ramp-box"></i></div><div><b>Погрузка</b><br><span class="text-sm" style="color: var(--text-3)">и разгрузка</span></div></div>
-            <div class="feature"><div class="ico"><i class="fas fa-truck-fast"></i></div><div><b>Перевозка</b><br><span class="text-sm" style="color: var(--text-3)">грузов</span></div></div>
-            <div class="feature"><div class="ico"><i class="fas fa-warehouse"></i></div><div><b>Контейнеры</b><br><span class="text-sm" style="color: var(--text-3)">20 / 40 фут.</span></div></div>
-            <div class="feature"><div class="ico"><i class="fas fa-house-chimney-crack"></i></div><div><b>Бытовки</b><br><span class="text-sm" style="color: var(--text-3)">и блок-модули</span></div></div>
-            <div class="feature"><div class="ico"><i class="fas fa-cubes-stacked"></i></div><div><b>ЖБИ</b><br><span class="text-sm" style="color: var(--text-3)">плиты, кольца</span></div></div>
-            <div class="feature"><div class="ico"><i class="fas fa-screwdriver-wrench"></i></div><div><b>Монтаж</b><br><span class="text-sm" style="color: var(--text-3)">оборудования</span></div></div>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 mt-6">
+            <div class="feature">
+              <div class="ico"><i class="fas fa-truck-ramp-box"></i></div>
+              <div class="ft-body">
+                <div class="ft-title">Погрузка и разгрузка</div>
+                <div class="ft-sub">с доставкой</div>
+              </div>
+            </div>
+            <div class="feature">
+              <div class="ico"><i class="fas fa-truck-fast"></i></div>
+              <div class="ft-body">
+                <div class="ft-title">Перевозка грузов</div>
+                <div class="ft-sub">по городу и области</div>
+              </div>
+            </div>
+            <div class="feature">
+              <div class="ico"><i class="fas fa-warehouse"></i></div>
+              <div class="ft-body">
+                <div class="ft-title">Контейнеры</div>
+                <div class="ft-sub">20 и 40 футов</div>
+              </div>
+            </div>
+            <div class="feature">
+              <div class="ico"><i class="fas fa-house-chimney-crack"></i></div>
+              <div class="ft-body">
+                <div class="ft-title">Бытовки</div>
+                <div class="ft-sub">и блок-модули</div>
+              </div>
+            </div>
+            <div class="feature">
+              <div class="ico"><i class="fas fa-cubes-stacked"></i></div>
+              <div class="ft-body">
+                <div class="ft-title">ЖБИ изделия</div>
+                <div class="ft-sub">плиты, кольца</div>
+              </div>
+            </div>
+            <div class="feature">
+              <div class="ico"><i class="fas fa-screwdriver-wrench"></i></div>
+              <div class="ft-body">
+                <div class="ft-title">Монтаж</div>
+                <div class="ft-sub">оборудования</div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ============== ВИДЫ ТЕХНИКИ (4 ШТ.) ============== -->
+  <!-- ============== ВИДЫ ТЕХНИКИ ============== -->
   <section id="equipment" class="py-20 sm:py-24" style="background: var(--bg-2);">
     <div class="container mx-auto px-4 sm:px-6">
 
       <div class="mb-12 flex flex-wrap items-end justify-between gap-6" data-aos="fade-right">
         <div>
           <span class="title-bar">02 — Парк техники</span>
-          <h2 class="display mt-4 text-5xl sm:text-7xl" style="color: var(--text-1);">
+          <h2 class="display h2-display mt-4" style="color: var(--text-1);">
             Виды <span class="accent">техники</span>
           </h2>
         </div>
         <div class="caption max-w-xs">4 категории манипуляторов под любую задачу — от лёгких бытовок до тяжёлых ЖБИ-конструкций</div>
       </div>
 
-      <!-- 2x2 сетка -->
       <div class="grid md:grid-cols-2 gap-6 lg:gap-8">
 
-        <!-- Техника 1 -->
         <article class="card p-0 overflow-hidden" data-aos="fade-up">
           <div class="aspect-[16/10] img-fallback overflow-hidden">
             <img src="images/equipment-1.jpg" alt="Манипулятор 5 тонн в Алматы" class="w-full h-full object-cover" loading="lazy" onerror="this.style.display='none'">
           </div>
           <div class="p-6 sm:p-8">
-            <div class="flex items-baseline justify-between gap-4">
+            <div class="flex items-baseline justify-between gap-4 flex-wrap">
               <h3 class="display text-3xl sm:text-4xl" style="color: var(--text-1);">Манипулятор <span class="accent">5 тонн</span></h3>
               <span class="caption">Лёгкий</span>
             </div>
@@ -625,13 +606,12 @@
           </div>
         </article>
 
-        <!-- Техника 2 -->
         <article class="card p-0 overflow-hidden" data-aos="fade-up" data-aos-delay="100">
           <div class="aspect-[16/10] img-fallback overflow-hidden">
             <img src="images/equipment-2.jpg" alt="Манипулятор 10 тонн в Алматы" class="w-full h-full object-cover" loading="lazy" onerror="this.style.display='none'">
           </div>
           <div class="p-6 sm:p-8">
-            <div class="flex items-baseline justify-between gap-4">
+            <div class="flex items-baseline justify-between gap-4 flex-wrap">
               <h3 class="display text-3xl sm:text-4xl" style="color: var(--text-1);">Манипулятор <span class="accent">10 тонн</span></h3>
               <span class="caption">Универсал</span>
             </div>
@@ -647,13 +627,12 @@
           </div>
         </article>
 
-        <!-- Техника 3 -->
         <article class="card p-0 overflow-hidden" data-aos="fade-up" data-aos-delay="200">
           <div class="aspect-[16/10] img-fallback overflow-hidden">
             <img src="images/equipment-3.jpg" alt="Манипулятор 15 тонн в Алматы" class="w-full h-full object-cover" loading="lazy" onerror="this.style.display='none'">
           </div>
           <div class="p-6 sm:p-8">
-            <div class="flex items-baseline justify-between gap-4">
+            <div class="flex items-baseline justify-between gap-4 flex-wrap">
               <h3 class="display text-3xl sm:text-4xl" style="color: var(--text-1);">Манипулятор <span class="accent">15 тонн</span></h3>
               <span class="caption">Тяжёлый</span>
             </div>
@@ -669,13 +648,12 @@
           </div>
         </article>
 
-        <!-- Техника 4 -->
         <article class="card p-0 overflow-hidden" data-aos="fade-up" data-aos-delay="300">
           <div class="aspect-[16/10] img-fallback overflow-hidden">
             <img src="images/equipment-4.jpg" alt="Манипулятор 20 тонн с длинной стрелой в Алматы" class="w-full h-full object-cover" loading="lazy" onerror="this.style.display='none'">
           </div>
           <div class="p-6 sm:p-8">
-            <div class="flex items-baseline justify-between gap-4">
+            <div class="flex items-baseline justify-between gap-4 flex-wrap">
               <h3 class="display text-3xl sm:text-4xl" style="color: var(--text-1);">Манипулятор <span class="accent">20 тонн</span></h3>
               <span class="caption">Длинная стрела</span>
             </div>
@@ -700,22 +678,69 @@
 
       <div class="mb-12" data-aos="fade-right">
         <span class="title-bar">03 — Объекты</span>
-        <h2 class="display mt-4 text-5xl sm:text-7xl" style="color: var(--text-1);">
+        <h2 class="display h2-display mt-4" style="color: var(--text-1);">
           Что <span class="accent">перевозим и монтируем</span>
         </h2>
       </div>
 
-      <!-- 2 ряда по 4 = 2x4 grid, на mobile 2 колонки -->
       <div class="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4">
-        <div class="feature flex-col items-start text-left" data-aos="fade-up"><div class="ico"><i class="fas fa-warehouse"></i></div><div><b>Контейнеры</b><br><span class="text-sm" style="color: var(--text-3)">20 и 40 футов</span></div></div>
-        <div class="feature flex-col items-start text-left" data-aos="fade-up" data-aos-delay="50"><div class="ico"><i class="fas fa-house-chimney"></i></div><div><b>Бытовки</b><br><span class="text-sm" style="color: var(--text-3)">блок-модули</span></div></div>
-        <div class="feature flex-col items-start text-left" data-aos="fade-up" data-aos-delay="100"><div class="ico"><i class="fas fa-cubes-stacked"></i></div><div><b>ЖБИ изделия</b><br><span class="text-sm" style="color: var(--text-3)">плиты, кольца, блоки</span></div></div>
-        <div class="feature flex-col items-start text-left" data-aos="fade-up" data-aos-delay="150"><div class="ico"><i class="fas fa-th-large"></i></div><div><b>Сэндвич-панели</b><br><span class="text-sm" style="color: var(--text-3)">стеновые, кровельные</span></div></div>
+        <div class="feature" data-aos="fade-up">
+          <div class="ico"><i class="fas fa-warehouse"></i></div>
+          <div class="ft-body">
+            <div class="ft-title">Контейнеры</div>
+            <div class="ft-sub">20 и 40 футов</div>
+          </div>
+        </div>
+        <div class="feature" data-aos="fade-up" data-aos-delay="50">
+          <div class="ico"><i class="fas fa-house-chimney"></i></div>
+          <div class="ft-body">
+            <div class="ft-title">Бытовки</div>
+            <div class="ft-sub">блок-модули</div>
+          </div>
+        </div>
+        <div class="feature" data-aos="fade-up" data-aos-delay="100">
+          <div class="ico"><i class="fas fa-cubes-stacked"></i></div>
+          <div class="ft-body">
+            <div class="ft-title">ЖБИ</div>
+            <div class="ft-sub">плиты, кольца, блоки</div>
+          </div>
+        </div>
+        <div class="feature" data-aos="fade-up" data-aos-delay="150">
+          <div class="ico"><i class="fas fa-th-large"></i></div>
+          <div class="ft-body">
+            <div class="ft-title">Сэндвич-панели</div>
+            <div class="ft-sub">стеновые, кровельные</div>
+          </div>
+        </div>
 
-        <div class="feature flex-col items-start text-left" data-aos="fade-up"><div class="ico"><i class="fas fa-tractor"></i></div><div><b>Спецтехника</b><br><span class="text-sm" style="color: var(--text-3)">мини-погрузчики, ATV</span></div></div>
-        <div class="feature flex-col items-start text-left" data-aos="fade-up" data-aos-delay="50"><div class="ico"><i class="fas fa-cube"></i></div><div><b>Стройматериалы</b><br><span class="text-sm" style="color: var(--text-3)">кирпич, газоблок</span></div></div>
-        <div class="feature flex-col items-start text-left" data-aos="fade-up" data-aos-delay="100"><div class="ico"><i class="fas fa-tree"></i></div><div><b>Деревья</b><br><span class="text-sm" style="color: var(--text-3)">пересадка, валка</span></div></div>
-        <div class="feature flex-col items-start text-left" data-aos="fade-up" data-aos-delay="150"><div class="ico"><i class="fas fa-screwdriver-wrench"></i></div><div><b>Оборудование</b><br><span class="text-sm" style="color: var(--text-3)">монтаж и демонтаж</span></div></div>
+        <div class="feature" data-aos="fade-up">
+          <div class="ico"><i class="fas fa-tractor"></i></div>
+          <div class="ft-body">
+            <div class="ft-title">Спецтехника</div>
+            <div class="ft-sub">мини-погрузчики</div>
+          </div>
+        </div>
+        <div class="feature" data-aos="fade-up" data-aos-delay="50">
+          <div class="ico"><i class="fas fa-cube"></i></div>
+          <div class="ft-body">
+            <div class="ft-title">Стройматериалы</div>
+            <div class="ft-sub">кирпич, газоблок</div>
+          </div>
+        </div>
+        <div class="feature" data-aos="fade-up" data-aos-delay="100">
+          <div class="ico"><i class="fas fa-tree"></i></div>
+          <div class="ft-body">
+            <div class="ft-title">Деревья</div>
+            <div class="ft-sub">пересадка, валка</div>
+          </div>
+        </div>
+        <div class="feature" data-aos="fade-up" data-aos-delay="150">
+          <div class="ico"><i class="fas fa-screwdriver-wrench"></i></div>
+          <div class="ft-body">
+            <div class="ft-title">Оборудование</div>
+            <div class="ft-sub">монтаж/демонтаж</div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -726,134 +751,71 @@
 
       <div class="mb-12" data-aos="fade-right">
         <span class="title-bar">04 — Почему мы</span>
-        <h2 class="display mt-4 text-5xl sm:text-7xl" style="color: var(--text-1);">
+        <h2 class="display h2-display mt-4" style="color: var(--text-1);">
           Наши <span class="accent">преимущества</span>
         </h2>
       </div>
 
-      <!-- 2 колонки, по 3 пункта в каждой -->
       <div class="grid lg:grid-cols-2 gap-6 lg:gap-10">
 
         <div class="space-y-4" data-aos="fade-up">
-          <div class="feature"><div class="ico"><i class="fas fa-bolt"></i></div><div><b style="color: var(--text-1)">Подача за 60 минут</b><div class="body-text mt-1">По Алматы — оперативная подача. Дежурные машины в разных районах города.</div></div></div>
-          <div class="feature"><div class="ico"><i class="fas fa-clock"></i></div><div><b style="color: var(--text-1)">Работаем 24/7</b><div class="body-text mt-1">Принимаем заявки и выезжаем круглосуточно, включая выходные и праздники.</div></div></div>
-          <div class="feature"><div class="ico"><i class="fas fa-tags"></i></div><div><b style="color: var(--text-1)">Прозрачные цены</b><div class="body-text mt-1">Стоимость фиксируем при заказе. Никаких скрытых доплат «по факту».</div></div></div>
+          <div class="feature">
+            <div class="ico"><i class="fas fa-bolt"></i></div>
+            <div class="ft-body">
+              <div class="ft-title">Подача за 60 минут</div>
+              <div class="ft-desc">По Алматы — оперативная подача. Дежурные машины в разных районах города.</div>
+            </div>
+          </div>
+          <div class="feature">
+            <div class="ico"><i class="fas fa-clock"></i></div>
+            <div class="ft-body">
+              <div class="ft-title">Работаем 24/7</div>
+              <div class="ft-desc">Принимаем заявки и выезжаем круглосуточно, включая выходные и праздники.</div>
+            </div>
+          </div>
+          <div class="feature">
+            <div class="ico"><i class="fas fa-tags"></i></div>
+            <div class="ft-body">
+              <div class="ft-title">Прозрачные цены</div>
+              <div class="ft-desc">Стоимость фиксируем при заказе. Никаких скрытых доплат «по факту».</div>
+            </div>
+          </div>
         </div>
 
         <div class="space-y-4" data-aos="fade-up" data-aos-delay="120">
-          <div class="feature"><div class="ico"><i class="fas fa-user-shield"></i></div><div><b style="color: var(--text-1)">Опытные крановщики</b><div class="body-text mt-1">Стаж от 5 лет, действующие удостоверения, знание города и трасс области.</div></div></div>
-          <div class="feature"><div class="ico"><i class="fas fa-file-invoice"></i></div><div><b style="color: var(--text-1)">Документы для юр.лиц</b><div class="body-text mt-1">Договор, счёт, акт выполненных работ, ЭСФ. Безналичный расчёт.</div></div></div>
-          <div class="feature"><div class="ico"><i class="fas fa-map-location-dot"></i></div><div><b style="color: var(--text-1)">Город и область</b><div class="body-text mt-1">Капшагай, Талгар, Каскелен, Иссык, Узынагаш, Конаев, Чилик и другие.</div></div></div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============== ПРАЙС ============== -->
-  <section id="prices" class="py-20 sm:py-24" style="background: var(--bg-1);">
-    <div class="container mx-auto px-4 sm:px-6">
-
-      <div class="mb-12 flex items-end justify-between flex-wrap gap-6" data-aos="fade-right">
-        <div>
-          <span class="title-bar">05 — Прайс</span>
-          <h2 class="display mt-4 text-5xl sm:text-7xl" style="color: var(--text-1);">
-            Цены на <span class="accent">аренду манипулятора</span>
-          </h2>
-        </div>
-        <div class="caption max-w-xs">Финальная стоимость зависит от района, длительности и сложности работ. Уточняйте у диспетчера.</div>
-      </div>
-
-      <!-- 2 колонки -->
-      <div class="grid lg:grid-cols-2 gap-6 lg:gap-10">
-
-        <div class="card p-6 sm:p-8" data-aos="fade-up">
-          <div class="caption">Почасовая аренда</div>
-          <h3 class="display text-3xl sm:text-4xl mt-2" style="color: var(--text-1);">Тариф «Час»</h3>
-
-          <div class="mt-6">
-            <div class="price-row">
-              <div>
-                <div class="display text-2xl" style="color: var(--text-1);">Манипулятор 5 тонн</div>
-                <div class="caption mt-1">мин. заказ — 4 часа</div>
-              </div>
-              <div class="price">от 12 000 ₸<small> /час</small></div>
+          <div class="feature">
+            <div class="ico"><i class="fas fa-user-shield"></i></div>
+            <div class="ft-body">
+              <div class="ft-title">Опытные крановщики</div>
+              <div class="ft-desc">Стаж от 5 лет, действующие удостоверения, знание города и трасс области.</div>
             </div>
-            <div class="price-row">
-              <div>
-                <div class="display text-2xl" style="color: var(--text-1);">Манипулятор 10 тонн</div>
-                <div class="caption mt-1">мин. заказ — 4 часа</div>
-              </div>
-              <div class="price">от 16 000 ₸<small> /час</small></div>
+          </div>
+          <div class="feature">
+            <div class="ico"><i class="fas fa-file-invoice"></i></div>
+            <div class="ft-body">
+              <div class="ft-title">Документы для юр.лиц</div>
+              <div class="ft-desc">Договор, счёт, акт выполненных работ, ЭСФ. Безналичный расчёт.</div>
             </div>
-            <div class="price-row">
-              <div>
-                <div class="display text-2xl" style="color: var(--text-1);">Манипулятор 15 тонн</div>
-                <div class="caption mt-1">мин. заказ — 4 часа</div>
-              </div>
-              <div class="price">от 22 000 ₸<small> /час</small></div>
-            </div>
-            <div class="price-row">
-              <div>
-                <div class="display text-2xl" style="color: var(--text-1);">Манипулятор 20 тонн</div>
-                <div class="caption mt-1">мин. заказ — 5 часов</div>
-              </div>
-              <div class="price">от 30 000 ₸<small> /час</small></div>
+          </div>
+          <div class="feature">
+            <div class="ico"><i class="fas fa-map-location-dot"></i></div>
+            <div class="ft-body">
+              <div class="ft-title">Город и область</div>
+              <div class="ft-desc">Капшагай, Талгар, Каскелен, Иссык, Узынагаш, Конаев, Чилик и другие.</div>
             </div>
           </div>
         </div>
-
-        <div class="card p-6 sm:p-8" data-aos="fade-up" data-aos-delay="120">
-          <div class="caption">Дополнительно</div>
-          <h3 class="display text-3xl sm:text-4xl mt-2" style="color: var(--text-1);">Услуги и доплаты</h3>
-
-          <div class="mt-6">
-            <div class="price-row">
-              <div>
-                <div class="display text-2xl" style="color: var(--text-1);">Подача в черте города</div>
-                <div class="caption mt-1">в пределах Алматы</div>
-              </div>
-              <div class="price">от 2 000 ₸</div>
-            </div>
-            <div class="price-row">
-              <div>
-                <div class="display text-2xl" style="color: var(--text-1);">Выезд по области</div>
-                <div class="caption mt-1">расчёт по километражу</div>
-              </div>
-              <div class="price">от 250 ₸<small> /км</small></div>
-            </div>
-            <div class="price-row">
-              <div>
-                <div class="display text-2xl" style="color: var(--text-1);">Ночной тариф</div>
-                <div class="caption mt-1">с 22:00 до 06:00</div>
-              </div>
-              <div class="price">+20%</div>
-            </div>
-            <div class="price-row">
-              <div>
-                <div class="display text-2xl" style="color: var(--text-1);">Долгосрочная аренда</div>
-                <div class="caption mt-1">от 5 рабочих смен</div>
-              </div>
-              <div class="price accent">скидка</div>
-            </div>
-          </div>
-
-          <a href="https://wa.me/77013432227?text=Здравствуйте%21%20Хочу%20уточнить%20цену%20на%20манипулятор." target="_blank" rel="noopener noreferrer" class="mt-8 inline-flex items-center gap-2 nav-link px-6 py-4 clip-btn" style="background: var(--accent); color: #fff;">
-            <i class="fab fa-whatsapp"></i> Получить точный расчёт
-          </a>
-        </div>
       </div>
-
-      <p class="mt-8 text-center caption">* Цены ориентировочные. Окончательная стоимость рассчитывается индивидуально.</p>
     </div>
   </section>
 
   <!-- ============== ЗОНЫ ОБСЛУЖИВАНИЯ ============== -->
-  <section id="areas" class="py-20 sm:py-24" style="background: var(--bg-2);">
+  <section id="areas" class="py-20 sm:py-24" style="background: var(--bg-1);">
     <div class="container mx-auto px-4 sm:px-6">
 
       <div class="mb-12" data-aos="fade-right">
-        <span class="title-bar">06 — География</span>
-        <h2 class="display mt-4 text-5xl sm:text-7xl" style="color: var(--text-1);">
+        <span class="title-bar">05 — География</span>
+        <h2 class="display h2-display mt-4" style="color: var(--text-1);">
           Зоны <span class="accent">обслуживания</span>
         </h2>
       </div>
@@ -861,12 +823,12 @@
       <div class="grid lg:grid-cols-2 gap-6 lg:gap-10">
 
         <div class="card p-6 sm:p-8 card-accent" data-aos="fade-up">
-          <div class="flex items-start justify-between">
-            <div>
+          <div class="flex items-start justify-between gap-4">
+            <div class="min-w-0">
               <div class="caption">Город</div>
               <h3 class="display text-3xl sm:text-4xl mt-2" style="color: var(--text-1);">Алматы — все районы</h3>
             </div>
-            <i class="fas fa-city accent text-3xl"></i>
+            <i class="fas fa-city accent text-3xl shrink-0"></i>
           </div>
           <div class="grid grid-cols-2 gap-2 mt-6 body-text">
             <div class="flex gap-2"><i class="fas fa-circle accent text-[6px] mt-2"></i> Алмалинский</div>
@@ -882,12 +844,12 @@
         </div>
 
         <div class="card p-6 sm:p-8 card-accent" data-aos="fade-up" data-aos-delay="120">
-          <div class="flex items-start justify-between">
-            <div>
+          <div class="flex items-start justify-between gap-4">
+            <div class="min-w-0">
               <div class="caption">Область</div>
               <h3 class="display text-3xl sm:text-4xl mt-2" style="color: var(--text-1);">Алматинская область</h3>
             </div>
-            <i class="fas fa-mountain accent text-3xl"></i>
+            <i class="fas fa-mountain accent text-3xl shrink-0"></i>
           </div>
           <div class="grid grid-cols-2 gap-2 mt-6 body-text">
             <div class="flex gap-2"><i class="fas fa-circle accent text-[6px] mt-2"></i> Конаев (Капшагай)</div>
@@ -906,41 +868,40 @@
   </section>
 
   <!-- ============== КАК ЗАКАЗАТЬ ============== -->
-  <section id="how" class="py-20 sm:py-24" style="background: var(--bg-1);">
+  <section id="how" class="py-20 sm:py-24" style="background: var(--bg-2);">
     <div class="container mx-auto px-4 sm:px-6">
 
       <div class="mb-12" data-aos="fade-right">
-        <span class="title-bar">07 — Процесс</span>
-        <h2 class="display mt-4 text-5xl sm:text-7xl" style="color: var(--text-1);">
+        <span class="title-bar">06 — Процесс</span>
+        <h2 class="display h2-display mt-4" style="color: var(--text-1);">
           Как <span class="accent">заказать</span>
         </h2>
       </div>
 
-      <!-- 2 ряда -->
       <div class="grid md:grid-cols-2 gap-6 lg:gap-8">
 
-        <div class="card p-6 sm:p-8 relative" data-aos="fade-up">
+        <div class="card p-6 sm:p-8 relative overflow-hidden" data-aos="fade-up">
           <div class="deco-num absolute right-4 top-4">01</div>
           <div class="caption">Шаг 1</div>
           <h3 class="display text-3xl mt-2" style="color: var(--text-1);">Звонок или WhatsApp</h3>
           <p class="body-text mt-3">Свяжитесь с диспетчером по номеру <a href="tel:+77013432227" class="accent font-bold">+7 701 343 2227</a>. Опишите задачу: что и куда везём, габариты, дата.</p>
         </div>
 
-        <div class="card p-6 sm:p-8 relative" data-aos="fade-up" data-aos-delay="80">
+        <div class="card p-6 sm:p-8 relative overflow-hidden" data-aos="fade-up" data-aos-delay="80">
           <div class="deco-num absolute right-4 top-4">02</div>
           <div class="caption">Шаг 2</div>
           <h3 class="display text-3xl mt-2" style="color: var(--text-1);">Расчёт стоимости</h3>
           <p class="body-text mt-3">Подбираем подходящий манипулятор и рассчитываем итоговую цену. Согласуем дату и время подачи.</p>
         </div>
 
-        <div class="card p-6 sm:p-8 relative" data-aos="fade-up" data-aos-delay="160">
+        <div class="card p-6 sm:p-8 relative overflow-hidden" data-aos="fade-up" data-aos-delay="160">
           <div class="deco-num absolute right-4 top-4">03</div>
           <div class="caption">Шаг 3</div>
           <h3 class="display text-3xl mt-2" style="color: var(--text-1);">Подача техники</h3>
           <p class="body-text mt-3">Манипулятор приезжает в оговорённое время. По городу — обычно в течение 60 минут от заявки.</p>
         </div>
 
-        <div class="card p-6 sm:p-8 relative" data-aos="fade-up" data-aos-delay="240">
+        <div class="card p-6 sm:p-8 relative overflow-hidden" data-aos="fade-up" data-aos-delay="240">
           <div class="deco-num absolute right-4 top-4">04</div>
           <div class="caption">Шаг 4</div>
           <h3 class="display text-3xl mt-2" style="color: var(--text-1);">Работа и оплата</h3>
@@ -951,23 +912,22 @@
   </section>
 
   <!-- ============== FAQ ============== -->
-  <section id="faq" class="py-20 sm:py-24" style="background: var(--bg-2);">
+  <section id="faq" class="py-20 sm:py-24" style="background: var(--bg-1);">
     <div class="container mx-auto px-4 sm:px-6">
 
       <div class="mb-12" data-aos="fade-right">
-        <span class="title-bar">08 — FAQ</span>
-        <h2 class="display mt-4 text-5xl sm:text-7xl" style="color: var(--text-1);">
+        <span class="title-bar">07 — FAQ</span>
+        <h2 class="display h2-display mt-4" style="color: var(--text-1);">
           Вопросы <span class="accent">и ответы</span>
         </h2>
       </div>
 
-      <!-- 2 колонки -->
       <div class="grid lg:grid-cols-2 gap-4 lg:gap-6">
 
         <div class="space-y-3 sm:space-y-4">
           <details class="faq" data-aos="fade-up">
             <summary>Сколько стоит манипулятор в Алматы?</summary>
-            <p>Стоимость аренды манипулятора начинается от 12 000 ₸/час для техники грузоподъёмностью 5 тонн. Финальная цена зависит от района подачи, длительности и сложности работ. Минимальный заказ — 4 часа.</p>
+            <p>Стоимость аренды зависит от грузоподъёмности техники, района подачи, длительности и сложности работ. Чтобы получить точный расчёт, позвоните диспетчеру по номеру +7 701 343 2227 — рассчитаем за пару минут.</p>
           </details>
 
           <details class="faq" data-aos="fade-up" data-aos-delay="60">
@@ -977,7 +937,7 @@
 
           <details class="faq" data-aos="fade-up" data-aos-delay="120">
             <summary>Работаете ли вы по выходным и ночью?</summary>
-            <p>Да, мы работаем 24/7 без выходных и праздничных дней. В ночное время (с 22:00 до 06:00) действует доплата +20%.</p>
+            <p>Да, мы работаем 24/7 без выходных и праздничных дней. В ночное время может действовать дополнительный тариф — уточняйте у диспетчера при заказе.</p>
           </details>
 
           <details class="faq" data-aos="fade-up" data-aos-delay="180">
@@ -994,7 +954,7 @@
 
           <details class="faq" data-aos="fade-up" data-aos-delay="60">
             <summary>Едете ли в Алматинскую область?</summary>
-            <p>Да, выезжаем в Конаев (Капшагай), Талгар, Каскелен, Иссык, Узынагаш, Чилик и другие населённые пункты. Стоимость выезда — от 250 ₸/км.</p>
+            <p>Да, выезжаем в Конаев (Капшагай), Талгар, Каскелен, Иссык, Узынагаш, Чилик и другие населённые пункты. Стоимость выезда рассчитывается по километражу.</p>
           </details>
 
           <details class="faq" data-aos="fade-up" data-aos-delay="120">
@@ -1012,12 +972,12 @@
   </section>
 
   <!-- ============== КОНТАКТЫ ============== -->
-  <section id="contacts" class="py-20 sm:py-24" style="background: var(--bg-1);">
+  <section id="contacts" class="py-20 sm:py-24" style="background: var(--bg-2);">
     <div class="container mx-auto px-4 sm:px-6">
 
       <div class="mb-12" data-aos="fade-right">
-        <span class="title-bar">09 — Связь</span>
-        <h2 class="display mt-4 text-5xl sm:text-7xl" style="color: var(--text-1);">
+        <span class="title-bar">08 — Связь</span>
+        <h2 class="display h2-display mt-4" style="color: var(--text-1);">
           Контакты <span class="accent">manipuliator.kz</span>
         </h2>
       </div>
@@ -1029,7 +989,7 @@
           <h3 class="display text-3xl sm:text-4xl mt-2" style="color: var(--text-1);">Звоните — отвечаем сразу</h3>
 
           <a href="tel:+77013432227" class="mt-6 block">
-            <span class="display text-5xl sm:text-6xl accent leading-none">+7 701 343 2227</span>
+            <span class="display accent leading-none" style="font-size: clamp(38px, 9vw, 64px);">+7 701 343 2227</span>
           </a>
           <p class="caption mt-3">Круглосуточно &middot; без выходных</p>
 
@@ -1073,7 +1033,6 @@
         </div>
       </div>
 
-      <!-- SEO keyword block (видимый, но мелкий — для контекстной рекламы) -->
       <p class="seo-keywords border-t pt-6" style="border-color: var(--border);">
         Манипулятор Алматы &middot; аренда манипулятора Алматы &middot; кран-манипулятор &middot; манипулятор 5 тонн Алматы &middot; манипулятор 10 тонн Алматы &middot; манипулятор 15 тонн &middot; манипулятор 20 тонн &middot; манипулятор недорого Алматы &middot; манипулятор круглосуточно &middot; услуги манипулятора в Алматы &middot; перевозка контейнеров манипулятором &middot; перевозка бытовок &middot; доставка ЖБИ &middot; доставка стройматериалов &middot; манипулятор Алматинская область &middot; манипулятор Капшагай &middot; манипулятор Талгар &middot; манипулятор Каскелен &middot; манипулятор Конаев &middot; грузоперевозки манипулятором &middot; монтажные работы манипулятором.
       </p>
@@ -1085,18 +1044,14 @@
     </div>
   </footer>
 
-  <!-- Back to top -->
   <button id="toTop" class="to-top" aria-label="Наверх">
     <i class="fas fa-arrow-up"></i>
   </button>
 
-  <!-- ============== SCRIPTS ============== -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
-    // AOS init
     AOS.init({ once: true, duration: 800, easing: 'ease-out-cubic', offset: 60 });
 
-    // ===== Theme =====
     const root = document.documentElement;
     const themeToggle = document.getElementById('themeToggle');
     const iconDark = document.getElementById('themeIconDark');
@@ -1128,7 +1083,6 @@
       applyTheme(cur === 'dark' ? 'light' : 'dark');
     });
 
-    // ===== Drawer (бургер справа) =====
     const burger = document.getElementById('burgerBtn');
     const drawer = document.getElementById('drawer');
     const overlay = document.getElementById('drawerOverlay');
@@ -1153,17 +1107,14 @@
     drawerClose.addEventListener('click', closeDrawer);
     overlay.addEventListener('click', closeDrawer);
 
-    // Close drawer on link click
     drawer.querySelectorAll('a[href^="#"]').forEach(a => {
       a.addEventListener('click', closeDrawer);
     });
 
-    // ESC closes drawer
     document.addEventListener('keydown', e => {
       if (e.key === 'Escape' && drawer.classList.contains('open')) closeDrawer();
     });
 
-    // ===== Back to top =====
     const toTop = document.getElementById('toTop');
     window.addEventListener('scroll', () => {
       if (window.scrollY > 600) toTop.classList.add('show');
@@ -1171,11 +1122,8 @@
     });
     toTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
 
-    // Hide broken images gracefully (показываем placeholder)
     document.querySelectorAll('img').forEach(img => {
-      img.addEventListener('error', () => {
-        img.style.display = 'none';
-      });
+      img.addEventListener('error', () => { img.style.display = 'none'; });
     });
   </script>
 </body>
